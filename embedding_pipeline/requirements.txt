@@ -1,0 +1,7 @@
+langchain==0.2.11
+langchain-community==0.2.2
+neo4j==5.20.0
+load-dotenv==0.1.0
+ollama==0.3.1
+tqdm==4.66.1
+nltk==3.8.1

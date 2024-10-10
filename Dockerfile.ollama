@@ -1,0 +1,11 @@
+FROM ollama/ollama:latest
+
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
+COPY ./run_ollama.sh /tmp/run_ollama.sh
+
+WORKDIR /tmp
+
+RUN chmod +x run_ollama.sh
+
+EXPOSE 11434
